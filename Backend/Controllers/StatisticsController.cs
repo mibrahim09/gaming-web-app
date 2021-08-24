@@ -37,13 +37,13 @@ namespace NovaGaming.Controllers
         [HttpGet]
         public ServerStatistics Get()
         {
-            var result = new ServerStatistics();
+            var result = new ServerStatistics { ServerStatus = "OFFLINE" };
             try
             {
                 using (var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
                 {
                     socket.Connect("127.0.0.1", 3306);
-                    result.IsOnline = true;
+                    result.ServerStatus = "ONLINE";
                 }
             }
             catch
@@ -51,6 +51,8 @@ namespace NovaGaming.Controllers
 
             }
             var dbResult = _context.Stats.FirstOrDefault();
+            if (result.ServerStatus == "ONLINE")
+                result.OnlinePlayers = _context.Cfgs.FirstOrDefault().Online;
             result.LastCounterClockWinner = dbResult.LastCcwin;
             result.LastTwinCityWinner = dbResult.LastTcwin;
             result.LastGuildWarWinner = dbResult.LastGwwin;

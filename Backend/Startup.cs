@@ -40,6 +40,9 @@ namespace NovaGaming
             services.AddEntityFrameworkSqlServer();
             services.AddDbContextPool<ConquerDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("ConquerDb")));
 
+
+            services.AddCors();
+
             //Mapper Settings.
             var mapperConfig = new MapperConfiguration(mc =>
             {
@@ -86,6 +89,12 @@ namespace NovaGaming
 
             app.UseRouting();
 
+
+            // global cors policy
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
             app.UseAuthentication();
             app.UseAuthorization();

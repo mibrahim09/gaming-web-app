@@ -6221,11 +6221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\NovaGaming.csproj",
+      "projectUniqueName": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\NovaGaming.csproj",
       "projectName": "NovaGaming",
-      "projectPath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\NovaGaming.csproj",
+      "projectPath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\NovaGaming.csproj",
       "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
-      "outputPath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\obj\\",
+      "outputPath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",

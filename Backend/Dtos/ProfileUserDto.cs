@@ -8,7 +8,6 @@ namespace NovaGaming.Dtos
     public class ProfileUserDto
     {
         public string Username { get; set; }
-        public string Password { get; set; }
         public int Status { get; set; }
         public DateTime? Creation { get; set; }
         public string Ip { get; set; }
