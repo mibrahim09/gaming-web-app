@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Conquer.DbContexts;
+using NovaGaming.DbContexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -20,9 +20,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Middlewares;
-using Conquer.Services;
+using NovaGaming.Services;
 
-namespace Conquer
+namespace NovaGaming
 {
     public class Startup
     {

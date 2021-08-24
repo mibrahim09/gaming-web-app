@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Conquer.Models
+namespace NovaGaming.Models
 {
     public class ResetPassword
     {

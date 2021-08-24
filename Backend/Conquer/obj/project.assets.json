@@ -6221,9 +6221,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\Conquer.csproj",
-      "projectName": "Conquer",
-      "projectPath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\Conquer.csproj",
+      "projectUniqueName": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\NovaGaming.csproj",
+      "projectName": "NovaGaming",
+      "projectPath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\NovaGaming.csproj",
       "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
       "outputPath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\obj\\",
       "projectStyle": "PackageReference",

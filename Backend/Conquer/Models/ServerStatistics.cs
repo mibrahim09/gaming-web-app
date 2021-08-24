@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Conquer.Models
+namespace NovaGaming.Models
 {
     public class ServerStatistics
     {

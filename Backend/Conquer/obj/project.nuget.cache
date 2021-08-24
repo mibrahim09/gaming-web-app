@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RguT+rt8vDT9q8jz48xPXUTL4aVki/r/JXe4ZzDioRyEiebkok0mgA8aarJtI3O462JRPGCmALQJAy1viNhg1Q==",
+  "dgSpecHash": "hIM9wMqtvPDYCyc4Ie99KIEj7rusQ/4UeX39lfImfxqXGtZQVB6emg4u/dwR4rnAMcU/DW+GekZKifyosBIQhw==",
   "success": true,
-  "projectFilePath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\Conquer.csproj",
+  "projectFilePath": "G:\\CO Stuff\\Conquer Websites\\React\\Backend\\Conquer\\NovaGaming.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mohamed\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Mohamed\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",

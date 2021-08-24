@@ -1,4 +1,4 @@
-﻿using Conquer.Dtos;
+﻿using NovaGaming.Dtos;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Conquer.Services
+namespace NovaGaming.Services
 {
     public class AuthService
     {

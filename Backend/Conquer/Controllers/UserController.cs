@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Threading.Tasks;
-using Conquer.DbContexts;
-using Conquer.Dtos;
-using Conquer.Models;
+using NovaGaming.DbContexts;
+using NovaGaming.Dtos;
+using NovaGaming.Models;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using Conquer.sakila;
+using NovaGaming.sakila;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using System.Security.Claims;
-using Conquer.Services;
-using Conquer.Middlewares;
+using NovaGaming.Services;
+using NovaGaming.Middlewares;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Conquer.Controllers
+namespace NovaGaming.Controllers
 {
     [Route("api/users")]
     [ApiController]

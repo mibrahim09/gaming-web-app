@@ -1,12 +1,12 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
-using Conquer.sakila;
+using NovaGaming.sakila;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace Conquer.DbContexts
+namespace NovaGaming.DbContexts
 {
     public partial class ConquerDbContext : DbContext
     {

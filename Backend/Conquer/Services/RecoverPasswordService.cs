@@ -1,5 +1,5 @@
-﻿using Conquer.DbContexts;
-using Conquer.Models;
+﻿using NovaGaming.DbContexts;
+using NovaGaming.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
 using System.Threading.Tasks;
-using static Conquer.Services.RecoverPasswordService;
+using static NovaGaming.Services.RecoverPasswordService;
 
-namespace Conquer.Services
+namespace NovaGaming.Services
 {
     public interface IRecoverPasswordService
     {

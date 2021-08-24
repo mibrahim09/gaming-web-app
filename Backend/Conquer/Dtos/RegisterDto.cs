@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Conquer.Dtos
+namespace NovaGaming.Dtos
 {
     public class RegisterDto
     {

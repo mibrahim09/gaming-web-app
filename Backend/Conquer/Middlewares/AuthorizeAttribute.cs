@@ -1,4 +1,4 @@
-﻿using Conquer.sakila;
+﻿using NovaGaming.sakila;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Conquer.Middlewares
+namespace NovaGaming.Middlewares
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class AuthorizeAttribute : Attribute, IAuthorizationFilter

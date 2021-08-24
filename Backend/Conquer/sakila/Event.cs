@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace Conquer.sakila
+namespace NovaGaming.sakila
 {
     public partial class Event
     {

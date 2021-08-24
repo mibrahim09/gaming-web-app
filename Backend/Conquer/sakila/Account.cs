@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
-namespace Conquer.sakila
+namespace NovaGaming.sakila
 {
     public partial class Account
     {

@@ -1,4 +1,4 @@
-﻿using Conquer.DbContexts;
+﻿using NovaGaming.DbContexts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
@@ -7,7 +7,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using Conquer;
+using NovaGaming;
 
 namespace Middlewares
 {
