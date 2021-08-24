@@ -2,7 +2,7 @@
 
 # dependencies
 /FrontEnd/node_modules
-/FrontEnd/.pnp
+.pnp
 .pnp.js
 
 # testing
