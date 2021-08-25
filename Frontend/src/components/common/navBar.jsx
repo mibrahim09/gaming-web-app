@@ -16,7 +16,7 @@ const MyNavBar = (props) => {
             <CustomNavLink to="/">Home</CustomNavLink>
             <CustomNavLink to="/user/register">Register</CustomNavLink>
             <CustomNavLink to="/downloads">Downloads</CustomNavLink>
-            <CustomNavLink to="/ranks">Ranks</CustomNavLink>
+            <CustomNavLink to="/ranks/Trojan">Ranks</CustomNavLink>
             {!user && (
               <NavDropdown title="User" id="basic-nav-dropdown">
                 <CustomNavDropDownLink to="/user/login">

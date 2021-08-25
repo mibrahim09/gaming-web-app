@@ -42,9 +42,6 @@ class RegisterForm extends Form {
           globalOK: `You have successfully registered!`,
           globalError: '',
         })
-        setTimeout(() => {
-          window.location = '/'
-        }, 5000)
       }
     } catch (ex) {
       this.setState({ globalError: ex.response.data.error, globalOK: '' })

@@ -37,7 +37,7 @@ class App extends Component {
           <main className="container mt-5">
             <Switch>
               <Route path="/team" component={AboutUs}></Route>
-              <Route path="/ranks" component={Ranks}></Route>
+              <Route path="/ranks/:rankType" component={Ranks}></Route>
               <Route path="/downloads" component={Downloads}></Route>
               <Route path="/user/login" component={LoginForm}></Route>
               <Route path="/user/logout" component={Logout}></Route>

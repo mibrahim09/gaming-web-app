@@ -23,7 +23,6 @@ class UserProfile extends Component {
       })
       if (result.status == 200) {
         const data = result.data.value
-        console.log(data);
         this.setState(data)
       }
     } catch {}
@@ -32,10 +31,80 @@ class UserProfile extends Component {
     this.setState({ currentPage: page })
   }
   render() {
-    const { transactions, currentPage, pageSize } = this.state
+    const {
+      transactions,
+      currentPage,
+      pageSize,
+      account,
+      character,
+    } = this.state
     const transactionsToShow = paginate(transactions, currentPage, pageSize)
     return (
       <Container>
+        {character && (
+          <div className="mb-5">
+            <h3 className="mb-3 fw-light text-muted">Character Info</h3>
+
+            <div className="m-3">
+              <Row className="mb-2">
+                <Col xs={2}>
+                  Name: <span style={{ color: 'green' }}>{character.name}</span>
+                </Col>
+                <Col xs={2}>
+                  Spouse:{' '}
+                  <span style={{ color: 'green' }}>{character.spouse}</span>
+                </Col>
+
+                <Col xs={2}>
+                  Status: {' '}
+                  {account.isOnline ? (
+                    <span style={{ color: 'green' }}>ONLINE</span>
+                  ) : (
+                    <span style={{ color: 'red' }}>OFFLINE</span>
+                  )}
+                </Col>
+              </Row>
+              <Row className="mb-2">
+                <Col xs={2}>
+                  Silvers:{' '}
+                  <span style={{ color: 'green' }}>{character.silvers}</span>
+                </Col>
+                <Col xs={2}>
+                  Level:{' '}
+                  <span style={{ color: 'green' }}>{character.level}</span>
+                </Col>
+                <Col xs={2}>
+                  Vote Points:{' '}
+                  <span style={{ color: 'green' }}>{character.votePoints}</span>
+                </Col>
+              </Row>
+              <Row className="mb-2">
+                <Col xs={2}>
+                  VIP:{' '}
+                  <span style={{ color: 'green' }}>
+                    {character.vipLevel == null ? '0' : character.vipLevel}
+                  </span>
+                </Col>
+                <Col xs={2}>
+                  VIP Expiry:{' '}
+                  <span style={{ color: 'green' }}>
+                    {character.vipendDate == null
+                      ? 'NONE'
+                      : character.vipendDate}
+                  </span>
+                </Col>
+
+                <Col xs={2}>
+                  ConquerPoints:{' '}
+                  <span style={{ color: 'green' }}>{character.cps}</span>
+                </Col>
+              </Row>
+            </div>
+          </div>
+        )}
+        {!character && (
+          <h3 className="mb-3 fw-light text-muted ">No character yet</h3>
+        )}
         <Row>
           {transactions.length != 0 && (
             <Col xs={10}>
